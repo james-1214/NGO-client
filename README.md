@@ -1,3 +1,4 @@
+
 # NGO static website
 
 ## Run locally
@@ -26,3 +27,6 @@ Upload the contents of `dist/` to your Hostinger `public_html` directory.
 - Added a CSS fallback if the browser loses its WebGL context.
 
 The bundled Earth texture is a stylized world map, not a satellite photograph. Replace it with a licensed satellite texture if a photorealistic globe is required.
+=======
+# NGO-client
+
