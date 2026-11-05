@@ -1,0 +1,6 @@
+.sphere{width:70px;height:70px;border-radius:50%;position:relative;background:radial-gradient(circle at 30% 30%,#2f6b5a,var(--f) 70%)}
+.sphere i{position:absolute;inset:-14px;border-radius:50%;animation:orbit 2.4s linear infinite}.sphere i::after{content:'';position:absolute;top:0;left:50%;width:6px;height:6px;border-radius:50%;background:var(--au)}
+.sphere i:nth-child(2){animation-duration:3.4s;inset:-24px}.sphere i:nth-child(3){animation-duration:4.6s;inset:-34px;animation-direction:reverse}
+.scrollcue{animation:pulse 2s ease-in-out infinite}
+@keyframes orbit{to{transform:rotate(360deg)}}@keyframes pulse{50%{opacity:.3;transform:translateX(-50%) scaleY(.6)}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}}

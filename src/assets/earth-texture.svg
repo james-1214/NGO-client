@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2048" height="1024" viewBox="0 0 2048 1024">
+ <defs>
+  <linearGradient id="ocean" x2="0.2" y2="1"><stop stop-color="#0b4b75"/><stop offset=".48" stop-color="#087da0"/><stop offset="1" stop-color="#032d50"/></linearGradient>
+  <radialGradient id="seaGlow"><stop stop-color="#2bb8c9" stop-opacity=".45"/><stop offset="1" stop-color="#001b36" stop-opacity="0"/></radialGradient>
+  <linearGradient id="land" x2=".7" y2="1"><stop stop-color="#c5d89a"/><stop offset=".45" stop-color="#4d965c"/><stop offset="1" stop-color="#1d654d"/></linearGradient>
+  <filter id="soft"><feGaussianBlur stdDeviation="8"/></filter>
+  <pattern id="grid" width="128" height="128" patternUnits="userSpaceOnUse"><path d="M128 0H0V128" fill="none" stroke="#b8f4ed" stroke-opacity=".12" stroke-width="2"/></pattern>
+ </defs>
+ <rect width="2048" height="1024" fill="url(#ocean)"/>
+ <rect width="2048" height="1024" fill="url(#seaGlow)"/>
+ <!-- Simplified equirectangular continent silhouettes -->
+ <g fill="url(#land)" stroke="#d6e8a7" stroke-opacity=".55" stroke-width="5" stroke-linejoin="round">
+  <!-- North America -->
+  <path d="M130 170 190 115 270 98 330 130 390 122 445 170 430 220 470 252 450 300 410 316 390 370 350 390 325 450 275 470 255 430 210 412 185 365 145 340 120 280 90 238Z"/>
+  <path d="M390 420 430 435 460 480 445 530 480 570 460 625 425 660 400 620 385 560 350 515 360 465Z"/>
+  <!-- South America -->
+  <path d="M500 560 555 535 610 555 635 600 620 655 645 710 620 780 590 850 550 925 515 885 500 815 475 755 480 690 450 630Z"/>
+  <!-- Greenland -->
+  <path d="M480 80 540 52 590 75 580 135 540 175 495 150Z"/>
+  <!-- Europe and Asia -->
+  <path d="M880 170 930 130 1000 125 1040 155 1100 140 1150 165 1210 145 1280 165 1340 150 1405 175 1480 170 1530 210 1600 220 1650 260 1615 305 1550 300 1500 330 1450 315 1400 350 1345 335 1300 365 1240 340 1200 375 1140 350 1090 370 1040 330 990 335 955 290 910 275 880 230Z"/>
+  <path d="M1000 350 1050 365 1080 420 1050 455 1015 435 985 390Z"/>
+  <!-- Africa -->
+  <path d="M950 390 1015 365 1090 390 1120 450 1100 520 1070 590 1040 675 1000 720 970 665 950 590 920 520 925 450Z"/>
+  <!-- India / Southeast Asia -->
+  <path d="M1190 370 1240 385 1275 435 1260 485 1230 520 1205 480 1180 430Z"/>
+  <path d="M1300 400 1350 420 1390 460 1370 500 1320 485 1290 450Z"/>
+  <path d="M1400 420 1460 430 1500 470 1470 500 1420 485Z"/>
+  <!-- Japan and islands -->
+  <path d="M1555 345 1575 360 1565 405 1545 420 1535 390Z"/>
+  <path d="M1380 560 1450 575 1510 610 1485 635 1410 620Z"/>
+  <!-- Australia -->
+  <path d="M1500 700 1570 675 1640 700 1660 755 1625 810 1560 825 1505 790 1475 745Z"/>
+  <!-- Madagascar -->
+  <path d="M1135 690 1155 710 1145 765 1125 745Z"/>
+ </g>
+ <g fill="#e8f4d0" opacity=".3" filter="url(#soft)"><ellipse cx="390" cy="250" rx="180" ry="100"/><ellipse cx="1250" cy="260" rx="300" ry="110"/><ellipse cx="1030" cy="520" rx="110" ry="210"/><ellipse cx="1570" cy="740" rx="120" ry="70"/></g>
+ <rect width="2048" height="1024" fill="url(#grid)"/>
+ <g fill="none" stroke="#b8f7ef" stroke-opacity=".22" stroke-width="4"><path d="M0 512H2048M1024 0V1024"/><ellipse cx="1024" cy="512" rx="720" ry="510"/><ellipse cx="1024" cy="512" rx="360" ry="510"/></g>
+</svg>
