@@ -1,7 +1,0 @@
-import {useEffect} from 'react';import {useLocation} from 'react-router-dom';import SectionHeading from '../components/SectionHeading.jsx';import Photo from '../components/Photo.jsx';import { IMAGES } from '../assets/images.js';
-const Block=({id,label,title,items,alt,dark})=><section id={id} className={'sec split'+(dark?' dark':'')}><div><SectionHeading light={dark} label={label} title={title}/><ul className="list">{items.map(i=><li key={i}>{i}</li>)}</ul></div><Photo src={id==='legal' ? IMAGES.legal : IMAGES.humanitarian} className="round" alt={alt}/></section>;
-export default function OurWork(){const {hash}=useLocation();useEffect(()=>{if(hash)setTimeout(()=>document.querySelector(hash)?.scrollIntoView({behavior:'smooth'}),450)},[hash]);
-return(<><section className="sec pt"><SectionHeading label="Our work" title="Two pillars, one purpose"/></section>
-<Block id="humanitarian" label="Pillar 01" title="Humanitarian Assistance" items={['Financial assistance','Social welfare','Community support','Outreach programmes']} alt="Volunteer assisting a family"/>
-<Block id="legal" dark label="Pillar 02" title="Legal & Advocacy Support" items={['Legal guidance','Appropriate legal referrals','Fair treatment advocacy','Access to legal resources']} alt="Professional legal consultation"/>
-<section className="sec"><p className="note">Support is subject to assessment. Eligibility for financial aid is not automatic, and no legal outcome is guaranteed. NGO is not a law firm.</p></section></>)}
